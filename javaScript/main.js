@@ -11,10 +11,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const platform = event.target.platform.value;
 
     const videoGameBacklog = document.querySelector('#videoGame-backlog');
-    const div = document.createElement('h3');
+    const div = document.createElement('h4');
     videoGameBacklog.appendChild(div);
     div.textContent = `${gameTitle} ${publisher} ${platform}`;
-    // this.reset();
+    this.reset();
 
   }
 
