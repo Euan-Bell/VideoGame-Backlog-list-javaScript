@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>VideoGame Backlog</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="javaScript/main.js"></script>
+  </head>
+  <body>
+    <form id="new-videoGame-form">
+      <div id="form-wrapper">
+        <div class="form-item">
+          <label for="gameTitle" class="primary">Game Title</label>
+          <input type="text" id="gameTitle" required/>
+        </div>
+
+        <div class"form-item">
+          <label for="publisher" class+"primary">Publisher</label>
+          <input type="text" id="pulisher" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="platform" class="primary">Platform</label>
+          <select id="platform">
+            <option value="" disabled selected></option>
+            <option value="Xbox">Xbox</option>
+            <option value="Ps4">Ps4</option>
+            <option value="Switch">Switch</option>
+            <option value="PC">PC</option>
+            <option value="all consoles">All Console</option>
+          </select>
+        </div>
+      </div>
+      <input type="submit" value="save"/>
+    </form>
+
+    <button id="remove-all">Remove All</button>
+
+    <h1>VideoGame Backlog</h1>
+    <div id="videoGame-backlog"></div>
+  </body>
+</html>
