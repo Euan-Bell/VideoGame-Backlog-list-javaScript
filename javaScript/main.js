@@ -4,8 +4,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const handleFormSubmit = function(event){
     event.preventDefault();
-    console.dir(event.target.publisher.value);
+    console.dir(event.target.platform.value);
     const gameTitle = event.target.gameTitle.value);
     const publisher = event.target.publisher.value);
+    const platform = event.target.platform.value);
+
+    const videoGameBacklog = document.querySelector('#videoGame-backlog');
+    const div = document.createElement('h3');
+    videoGameBacklog.appendChild(div);
+    div.textContent = `${gameTitle} ${publisher} ${platform}`;
+    this.reset();
+
   }
 })
