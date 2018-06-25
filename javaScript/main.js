@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const videoGameBacklog = document.querySelector('#videoGame-backlog');
     const div = document.createElement('h4');
     videoGameBacklog.appendChild(div);
-    div.textContent = `${gameTitle} ${publisher} ${platform}`;
+    div.textContent = `${gameTitle} : ${publisher} : ${platform}`;
     this.reset();
 
   }
